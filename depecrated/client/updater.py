@@ -1,3 +1,5 @@
+## DEPECRATED ##
+
 # -*- coding: utf-8 -*-
 
 import shutil
@@ -49,7 +51,7 @@ def crear_config():
 
 def check_alf():
 	try:
-		open("alf.alf")
+		open("alf.alf").close()
 	except:
 		file_alf = open("alf.alf","w")
 		file_alf.close()
